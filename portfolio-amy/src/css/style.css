@@ -84,7 +84,7 @@
   }
    
   a {
-    color:#342f3b;
+    color:#342f3b ;
     text-decoration: none;
   }
 
@@ -113,26 +113,21 @@ h3 {
 h4 {
   font-size: 1.25rem;
 }
-h5 {
-  font-size: 1.5rem;
-}
 
 .project-link {
   text-transform: uppercase;
   font-size: 1.125rem;
-  color: #342f3b;
+  color: #45404c;
 }
 
-.about-info h3,
-.contact-title {
+.about-info h3 {
   font-weight: 400;
 }
 
 h3,
-h4,
-h5 {
+h4 {
   font-family: 'Poppins', serif;
-  line-height: 1.5;
+  line-height: 2;
   width: 100%
 }
 
@@ -154,16 +149,11 @@ figure {
   margin: 0;
 }
 
-address {
-  font-style: normal;
-}
-
 /* Structural Styles */
 header,
 #about,
 #skills,
-#projects,
-footer {
+#projects {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -188,8 +178,7 @@ footer {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   margin: 0;
 }
 
@@ -207,21 +196,17 @@ nav {
   margin-bottom: 60px;
 }
 
-#projects {
-  padding-top: 60px;
-}
- 
-#skills {
-  padding-bottom: 80px;
-}
-
 #about {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-footer {
-  padding: 80px 0;
+#skills {
+  padding-bottom: 80px;
+}
+
+#projects {
+  padding-top: 60px;
 }
 
 h2 {
@@ -261,33 +246,20 @@ figure {
 .about-text {
   margin: 0 0 30px 0;
 }
-
-#contact h3 {
-  margin-bottom: 60px;
-}
-
-.contact-info {
-  margin: 0 0 60px 0;
-}
-.contact-title {
-  margin: 0 0 40px 0;
-}
-
 /* -------------------- Base Header Styles -------------------- */
 
 header {
-  background-color:#F7E8E8;
+  background-color: #F7E8E8;
 }
 
 header nav ul li {
   font-size: .75rem;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .burger-menu {
-  color: var(--primary-color);
+  color:  #F7E8E8;
   font-size: 2rem;
   border: 0;
   background-color: transparent;
@@ -296,7 +268,7 @@ header nav ul li {
 }
 
 nav #contact-link {
-  background-color:#E9B14C;
+  background-color:#f7bc4d;
   padding: 10px 10px;
   border-radius: 30px;
 }
@@ -313,8 +285,6 @@ header h1 {
 header h2 {
   width: 100%
 }
-
-
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -352,10 +322,6 @@ header h2 {
   filter: drop-shadow(1px 2px 6px lightgrey);
 }
 
-.flex-fill {
-  flex-grow: 1;
-}
-
 .project-link {
   background-color: #342f3b;
   padding: .75rem 3.75rem;
@@ -364,7 +330,7 @@ header h2 {
 }
 
 .project-link:hover {
-  background-color: #cda41d;
+  background-color: lightgrey;
   color: #342f3b;
 }
 
@@ -373,7 +339,7 @@ header h2 {
 }
 
 #skills h4 {
-  margin: 40px 0 40px 0;
+  margin: 20px 0 20px 0;
   font-weight: bold;
 }
 
@@ -396,13 +362,15 @@ header h2 {
 
 /* Contacts section */
 .contact {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   background-color: #F7E8E8;
 }
 
 .contact h2 {
   text-align: center;
-  margin-bottom: var(--bottom-margin-2);
+  font-weight: lighter;
+  color: #342f3b;
+ 
 }
 
 .contact-form-container {
@@ -410,18 +378,20 @@ header h2 {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 10px var(rgb(247, 164, 176));
+ 
 }
 
 .contact-form-container label {
   line-height: 2.7em;
-  font-weight: var(--bold-font);
-  color: var(--primary-color);
+  font-weight: bold;
+  color: #342f3b;
 }
 
 .contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 14px;
+
 }
 
 .contact-form-container .input-field {
@@ -430,14 +400,14 @@ header h2 {
   padding-bottom: 10px;
   border-radius: 5px;
   border: none;
-  border: 2px outset var(--primary-color);
+  border: 1px outset #342f3b;
   font-size: 0.875rem;
   outline: none;
 }
 
 .input-field::placeholder {
   padding: 0.5rem;
-  color: var(--primary-color);
+  color: #342f3b;
 }
 
 .submit-btn {
@@ -445,16 +415,16 @@ header h2 {
   padding: 10px;
   margin: 10px 0;
   background-color: #fff;
-  border: 2px solid var(--primary-color);
+  border: 1px outset  #342f3b;
   border-radius: 5px;
   font-size: 1rem;
-  font-weight: var(--bold-font);
-  transition: var(--transition);
+  font-weight: bold;
 }
 
 .submit-btn:hover {
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  background-color: lightgrey;
+  color: #342f3b;
+  border: 2px solid  #342f3b;
   cursor: pointer;
 }
 /* Contacts section ends */
@@ -491,13 +461,13 @@ header h2 {
 /* Footer section */
 footer {
   background-color: white;
-  padding: 1.25rem;
+  padding:  1.125rem;
   text-align: center;
   margin: 2rem 0 0;
 }
-/* Footer section ends */
+/* Footer section end*/
 
-  /* ==========================================================================
+/* ==========================================================================
      Helper classes
      ========================================================================== */
   
@@ -583,13 +553,10 @@ footer {
     font-size: 1.25rem;
   }
 
-  h5 {
-    font-size: 1.5rem;
-  }
-
   header nav ul li {
     font-size: 1rem;
   }
+
 
   /* element margins */
   /* the list element have 20px of bottom margin already */
@@ -605,21 +572,13 @@ footer {
    #projects {
     padding-top: 80px;
   }
-
+ 
   #skills {
     padding-bottom: 80px;
   }
 
-  footer {
-    padding: 130px 0;
-  }
-
   #about {
     padding: 80px 0;
-  }
-
-  footer {
-    padding-bottom: 80px;
   }
 
   h2 {
@@ -654,14 +613,6 @@ footer {
   }
 
   .about-text {
-    margin: 0 0 30px 0;
-  }
-
-  .contact-info {
-    margin: 80px 0;
-  }
-
-  .contact-title {
     margin: 0 0 30px 0;
   }
 
@@ -731,36 +682,11 @@ footer {
   .about-info h4 {
     text-align: left;
   }
-
-  /* Footer */
-  .contact-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  footer .contact-info {
-    width: 33%;
-  }
-  
- footer ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-  }
-
-  footer .social-icons {
-    width: 12.5em;
-    justify-content: space-between;
-  }
-
-  footer .social-icons li i {
-    font-size: 5rem;
-  }
-
-  footer .copyright {
-    width: 100%;
+  footer {
+    background-color:white;
+    padding:  1.125rem;
+    text-align: center;
+    margin: 2rem 0 0;
   }
 
   @media only screen and (min-width: 1024px) {
@@ -773,7 +699,14 @@ footer {
     .about-info h3 {
       font-size: 2.5rem;
     }
+    footer {
+      background-color:white;
+      padding:  1.125rem;
+      text-align: center;
+      margin: 2rem 0 0;
+    }
   }
+  
   
   @media only screen and (min-width:1200px) {
   
@@ -942,16 +875,14 @@ footer {
     .about-info {
       width: 58%;
     }
+    footer {
+      background-color:white;
+      padding:  1.125rem;
+      text-align: center;
+      margin: 2rem 0 0;
+    }
   
-    /* contact */
-    footer .content-wrapper {
-      max-width: 70%;
-    }
-    footer .social-icons {
-      width: 12.5em;
-      justify-content: space-between;
-    }
-  }
+
   
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
