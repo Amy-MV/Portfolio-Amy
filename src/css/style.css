@@ -84,7 +84,7 @@
   }
    
   a {
-    color:#342f3b;
+    color:#342f3b ;
     text-decoration: none;
   }
 
@@ -113,9 +113,6 @@ h3 {
 h4 {
   font-size: 1.25rem;
 }
-h5 {
-  font-size: 1.5rem;
-}
 
 .project-link {
   text-transform: uppercase;
@@ -128,8 +125,7 @@ h5 {
 }
 
 h3,
-h4,
-h5 {
+h4 {
   font-family: 'Poppins', serif;
   line-height: 2;
   width: 100%
@@ -258,13 +254,12 @@ header {
 
 header nav ul li {
   font-size: .75rem;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .burger-menu {
-  color:  #342f3b ;
+  color:  #F7E8E8;
   font-size: 2rem;
   border: 0;
   background-color: transparent;
@@ -344,7 +339,7 @@ header h2 {
 }
 
 #skills h4 {
-  margin: 40px 0 40px 0;
+  margin: 20px 0 20px 0;
   font-weight: bold;
 }
 
@@ -466,7 +461,7 @@ header h2 {
 /* Footer section */
 footer {
   background-color: white;
-  padding: 1.25rem;
+  padding:  1.125rem;
   text-align: center;
   margin: 2rem 0 0;
 }
@@ -558,13 +553,10 @@ footer {
     font-size: 1.25rem;
   }
 
-  h5 {
-    font-size: 1.5rem;
-  }
-
   header nav ul li {
     font-size: 1rem;
   }
+
 
   /* element margins */
   /* the list element have 20px of bottom margin already */
@@ -580,21 +572,13 @@ footer {
    #projects {
     padding-top: 80px;
   }
-
+ 
   #skills {
     padding-bottom: 80px;
   }
 
-  footer {
-    padding: 130px 0;
-  }
-
   #about {
     padding: 80px 0;
-  }
-
-  footer {
-    padding-bottom: 80px;
   }
 
   h2 {
@@ -629,14 +613,6 @@ footer {
   }
 
   .about-text {
-    margin: 0 0 30px 0;
-  }
-
-  .contact-info {
-    margin: 80px 0;
-  }
-
-  .contact-title {
     margin: 0 0 30px 0;
   }
 
@@ -706,36 +682,11 @@ footer {
   .about-info h4 {
     text-align: left;
   }
-
-  /* Footer */
-  .contact-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  footer .contact-info {
-    width: 33%;
-  }
-  
- footer ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-  }
-
-  footer .social-icons {
-    width: 12.5em;
-    justify-content: space-between;
-  }
-
-  footer .social-icons li i {
-    font-size: 5rem;
-  }
-
-  footer .copyright {
-    width: 100%;
+  footer {
+    background-color:white;
+    padding:  1.125rem;
+    text-align: center;
+    margin: 2rem 0 0;
   }
 
   @media only screen and (min-width: 1024px) {
@@ -748,7 +699,14 @@ footer {
     .about-info h3 {
       font-size: 2.5rem;
     }
+    footer {
+      background-color:white;
+      padding:  1.125rem;
+      text-align: center;
+      margin: 2rem 0 0;
+    }
   }
+  
   
   @media only screen and (min-width:1200px) {
   
@@ -917,16 +875,14 @@ footer {
     .about-info {
       width: 58%;
     }
+    footer {
+      background-color:white;
+      padding:  1.125rem;
+      text-align: center;
+      margin: 2rem 0 0;
+    }
   
-    /* contact */
-    footer .content-wrapper {
-      max-width: 70%;
-    }
-    footer .social-icons {
-      width: 12.5em;
-      justify-content: space-between;
-    }
-  }
+
   
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
