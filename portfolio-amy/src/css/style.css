@@ -156,7 +156,7 @@ header,
 }
 
 .content-wrapper {
-  width: 85%;
+  width: 83%;
 }
 
 #projects p,
@@ -781,7 +781,7 @@ footer {
     }
   
     #skills .content-wrapper {
-      max-width: 900px;
+      max-width: 850px;
     }
     .skills-header {
       margin-bottom: 30px;
