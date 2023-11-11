@@ -7,12 +7,7 @@
     font-size: 16px;
     line-height: 1.4;
   }
-  
-  ::-moz-selection {
-    background:  #b3d4fc;
-    text-shadow: none;
-  }
-  
+
   ::selection {
     background:  #b3d4fc;
     text-shadow: none;
@@ -107,7 +102,7 @@
 }
 
 h3 {
-  font-size: 1.65rem;
+  font-size: 1.55rem;
 }
 
 h4 {
@@ -165,11 +160,12 @@ header,
 }
 
 #projects p,
-#about p
-{
+#about p {
   width: 100%;
   text-align: left;
 }
+
+.project-description,
 .about-text { 
   width: 100%;
   text-align: left;
@@ -185,7 +181,6 @@ h4 {
 p {
   margin: 0;
 }
-
 
 header {
   padding-top: 30px;
@@ -296,6 +291,8 @@ header h2 {
 
 #projects h3 {
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .portfolio-wrapper {
@@ -351,25 +348,24 @@ header h2 {
 #profile-image {
   width: 100%;
 }
-
-
-#about h3 
-#about p {
-  color: #342f3b ;
+.about-info h3 {
+  font-weight: lighter;
 }
 
 /* -------------------- Base Header Styles -------------------- */
 
 /* Contacts section */
 .contact {
-  margin-top: 1.5rem;
+  margin-top: 10m;
   background-color: #F7E8E8;
 }
 
+
 .contact h2 {
   text-align: center;
-  font-weight: lighter;
+  font-weight: bold;
   color: #342f3b;
+  padding-top: 40px;
  
 }
 
@@ -378,9 +374,9 @@ header h2 {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(rgb(247, 164, 176));
- 
+  padding-bottom: 40px;
 }
+
 
 .contact-form-container label {
   line-height: 2.7em;
@@ -561,28 +557,29 @@ footer {
   /* element margins */
   /* the list element have 20px of bottom margin already */
   header {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40x;
   }
 
   nav {
-    margin: 0 0 80px 0;
+    margin: 0 0 70px 0;
   }
    /*#work */
    #projects {
-    padding-top: 80px;
-  }
+    padding-top: 40px;
+   }
  
   #skills {
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 
   #about {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   h2 {
-    margin-top: 80px;
+    margin-top: 70px;
   }
 
   .portfolio-header {
@@ -597,19 +594,12 @@ footer {
     margin: 40px 0 60px 0;
   }
 
-  #skills {
-    padding-top: 80px;
-  }
-  .skills-header {
-    margin-bottom: 40px;
-  }
-
   #skills h4 {
     margin: 40px 0 20px 0;
   }
 
   .about-info h3 {
-    margin: 80px 0;
+    margin: 10px 0;
   }
 
   .about-text {
@@ -654,7 +644,7 @@ footer {
   }
 
   .home-portfolio-piece {
-    width: 45%;
+    width: 100%;
     align-items: center;
   }
 
@@ -676,7 +666,7 @@ footer {
   }
 
   #about figure {
-    width: 60%;
+    width: 100%;
   }
 
   .about-info h4 {
@@ -684,9 +674,9 @@ footer {
   }
   footer {
     background-color:white;
-    padding:  1.125rem;
     text-align: center;
     margin: 2rem 0 0;
+    padding-bottom: 20px;
   }
 
   @media only screen and (min-width: 1024px) {
@@ -701,7 +691,6 @@ footer {
     }
     footer {
       background-color:white;
-      padding:  1.125rem;
       text-align: center;
       margin: 2rem 0 0;
     }
@@ -753,53 +742,53 @@ footer {
     /* the list element have 20px of bottom margin already */
     header {
       padding-top: 80px;
-      padding-bottom: 140px;
+      padding-bottom: 90px;
     }
   
     nav {
-      margin-bottom: 80px;
+      margin-bottom: 70px;
     }
   
     #projects {
-      padding-top: 80px;
+      padding-top: 30px;
     }
   
     #skills {
-      padding-bottom: 120px;
+      padding-bottom: 60px;
     }
   
     #about {
-      padding-top: 80px;
-      padding-bottom: 80px;
+      padding-top: 60px;
+      padding-bottom: 50px;
     }
-  
-    footer {
-      padding: 140px 0 140px 0;
-    }
-  
+
     h2 {
       margin: 40px 0 0 0;
     }
   
     .portfolio-header {
-      margin: 0 0 60px 0;
+      margin: 0 0 60 0;
     }
-  
     .project-description {
       margin: 0 0 30px 0;
     }
     .project-link {
       margin: 40px 0 80px 0;
     }
+
     #skills {
-      padding-top: 120px;
+      padding-top: 60px;
     }
   
     #skills .content-wrapper {
       max-width: 900px;
     }
     .skills-header {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+    }
+    #skills h4 {
+      margin-top: 0px;
+
     }
   
     .about-info h3 {
@@ -810,13 +799,6 @@ footer {
     margin: 40px 0;
   }
     .about-text {
-      margin: 0 0 30px 0;
-    }
-  
-    .contact-info {
-      margin: 80px 0 80px 0;
-    }
-    .contact-title {
       margin: 0 0 30px 0;
     }
   
@@ -856,11 +838,12 @@ footer {
     }
   
     /* skills */
+
     .skill,
     .tool {
       width: 30%;
     }
-  
+
     /* about */
     .about-content-wrapper {
       display: flex;
@@ -873,11 +856,10 @@ footer {
     }
   
     .about-info {
-      width: 58%;
+      width: 60%;
     }
     footer {
       background-color:white;
-      padding:  1.125rem;
       text-align: center;
       margin: 2rem 0 0;
     }
